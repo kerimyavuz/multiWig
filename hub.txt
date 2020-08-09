@@ -1,0 +1,5 @@
+hub multiWigTest
+shortLabel multiWig Test
+longLabel Testing Display of Multiple ChIPSeq Bedgraphs
+genomesFile genomes.txt
+email kerimyavuz96@gmail.com

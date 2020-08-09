@@ -1,0 +1,29 @@
+track multiWig1
+type bigWig
+container multiWig
+shortLabel multiWig container test
+longLabel This multiWig overlay track graphs points from five chipseq samples
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+maxHeightPixels 500:100:8
+viewLimits 1:20
+priority 1
+
+                track chipseq_sample1
+                bigDataUrl _1_SRR015354.fastq.sorted.filtered.splitted.hg38_chr5.hg38.chrom.bw
+                shortLabel ChIPSeq Sample_1
+                longLabel ChIPSeq Sample_1 SRR015354
+                parent multiWig1
+                graphTypeDefault bar
+                type bigWig
+                color 255,0,0
+
+                track chipseq_sample2
+                bigDataUrl _1_SRR350878.fastq.sorted.filtered.splitted.hg38_chr5.hg38.chrom.bw
+                shortLabel ChIPSeq Sample_2
+                longLabel ChIPSeq Sample_2 SRR935443
+                parent multiWig1
+                graphTypeDefault bar
+                type bigWig
+                color 0,255,0
